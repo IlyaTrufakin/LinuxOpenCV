@@ -1,2 +1,2 @@
-Welding laser seem tracker interface
+Laser Seam Tracking System for Welding Automation interface
   
