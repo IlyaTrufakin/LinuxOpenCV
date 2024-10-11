@@ -1,21 +1,7 @@
 # ninja log v6
-743	1381	1728050375454136686	CMakeFiles/welcome.dir/lessons/selection.cpp.o	11bda8cf9cf75026
-56	1364	1728050374767137805	CMakeFiles/welcome.dir/lessons/find_in_files.cpp.o	6468c5a0bdd0c4e6
-3	743	1728050374714137892	CMakeFiles/welcome.dir/lessons/duplicate.cpp.o	dc77c60af2828e8d
+2265	2677	1728142901599821807	YourProjectName	2d08b166dad0ce50
+3	2265	1728142899337838322	CMakeFiles/YourProjectName.dir/main.cpp.o	ca94dfbafc774ba6
 1545	1639	1728050376256135381	welcome	e315169a14a45a0d
-4	712	1728050374715137890	CMakeFiles/welcome.dir/lessons/file_structure.cpp.o	3344276821467649
-714	775	1728050375425136733	CMakeFiles/welcome.dir/lessons/multiple_selection.cpp.o	b831d671350cf4cc
-850	888	1728050375561136512	CMakeFiles/welcome.dir/Refactorings.cpp.o	6acb9b0106e1063c
-814	850	1728050375525136570	CMakeFiles/welcome.dir/CodeAssistance.cpp.o	4a77b481c23fe88a
-787	813	1728050375498136614	CMakeFiles/welcome.dir/BasicEditing.cpp.o	f025fd6429a91a31
-1	783	1728050374712137895	CMakeFiles/welcome.dir/main.cpp.o	87a5d954b826cba8
-3	740	1728050374714137892	CMakeFiles/welcome.dir/lessons/context_actions.cpp.o	f5a821af9e9e12c8
-2	55	1728050374713137893	CMakeFiles/welcome.dir/lessons/comment.cpp.o	a4d52d6fced52700
-740	1545	1728050375451136691	CMakeFiles/welcome.dir/lessons/quadratic_equations_solver.cpp.o	2d98f698c16903a2
-775	1385	1728050375486136634	CMakeFiles/welcome.dir/lessons/unwrap.cpp.o	137ec13a35f1e041
-2	811	1728051544630794982	CMakeFiles/YourProjectName.dir/main.cpp.o	85b426429d704af7
-892	931	1728050375603136443	CMakeFiles/welcome.dir/Navigation.cpp.o	26d1e928b1e6406c
-812	964	1728051545441793242	YourProjectName	38cd179bcdb33e5e
-2	935	1728050374713137893	CMakeFiles/welcome.dir/lessons/buffered_reader.cpp.o	3c699fac7a5d125e
-6	3774	1728069295830053283	CMakeFiles/YourProjectName.dir/main.cpp.o	2b1c05280a24663a
-3775	4537	1728069299599048197	YourProjectName	2d08b166dad0ce50
+4	67	1728665635620435114	build.ninja	26dbd02118b2cf31
+2	2743	1728665635634435168	CMakeFiles/YourProjectName.dir/main.cpp.o	ca94dfbafc774ba6
+2744	3371	1728665638376445897	YourProjectName	240327393930ee03
