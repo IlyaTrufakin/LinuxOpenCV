@@ -3,6 +3,7 @@
 
 CMakeFiles/YourProjectName.dir/main.cpp.o
  /home/jetson/LinuxOpenCV/main.cpp
+ /usr/include/opencv4/opencv2/./imgproc/segmentation.hpp
  /usr/include/opencv4/opencv2/calib3d.hpp
  /usr/include/opencv4/opencv2/core.hpp
  /usr/include/opencv4/opencv2/core/affine.hpp
@@ -21,9 +22,11 @@ CMakeFiles/YourProjectName.dir/main.cpp.o
  /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp
  /usr/include/opencv4/opencv2/core/fast_math.hpp
  /usr/include/opencv4/opencv2/core/hal/interface.h
+ /usr/include/opencv4/opencv2/core/hal/msa_macros.h
  /usr/include/opencv4/opencv2/core/mat.hpp
  /usr/include/opencv4/opencv2/core/mat.inl.hpp
  /usr/include/opencv4/opencv2/core/matx.hpp
+ /usr/include/opencv4/opencv2/core/matx.inl.hpp
  /usr/include/opencv4/opencv2/core/neon_utils.hpp
  /usr/include/opencv4/opencv2/core/operations.hpp
  /usr/include/opencv4/opencv2/core/optim.hpp
@@ -33,6 +36,11 @@ CMakeFiles/YourProjectName.dir/main.cpp.o
  /usr/include/opencv4/opencv2/core/traits.hpp
  /usr/include/opencv4/opencv2/core/types.hpp
  /usr/include/opencv4/opencv2/core/utility.hpp
+ /usr/include/opencv4/opencv2/core/utils/instrumentation.hpp
+ /usr/include/opencv4/opencv2/core/utils/logger.defines.hpp
+ /usr/include/opencv4/opencv2/core/utils/logger.hpp
+ /usr/include/opencv4/opencv2/core/utils/logtag.hpp
+ /usr/include/opencv4/opencv2/core/utils/tls.hpp
  /usr/include/opencv4/opencv2/core/version.hpp
  /usr/include/opencv4/opencv2/core/vsx_utils.hpp
  /usr/include/opencv4/opencv2/dnn.hpp
@@ -75,13 +83,21 @@ CMakeFiles/YourProjectName.dir/main.cpp.o
  /usr/include/opencv4/opencv2/flann/sampling.h
  /usr/include/opencv4/opencv2/flann/saving.h
  /usr/include/opencv4/opencv2/flann/timer.h
+ /usr/include/opencv4/opencv2/freetype.hpp
  /usr/include/opencv4/opencv2/highgui.hpp
  /usr/include/opencv4/opencv2/imgcodecs.hpp
  /usr/include/opencv4/opencv2/imgproc.hpp
  /usr/include/opencv4/opencv2/ml.hpp
  /usr/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/include/opencv4/opencv2/objdetect.hpp
+ /usr/include/opencv4/opencv2/objdetect/aruco_board.hpp
+ /usr/include/opencv4/opencv2/objdetect/aruco_detector.hpp
+ /usr/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
+ /usr/include/opencv4/opencv2/objdetect/barcode.hpp
+ /usr/include/opencv4/opencv2/objdetect/charuco_detector.hpp
  /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
+ /usr/include/opencv4/opencv2/objdetect/face.hpp
+ /usr/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
  /usr/include/opencv4/opencv2/opencv.hpp
  /usr/include/opencv4/opencv2/opencv_modules.hpp
  /usr/include/opencv4/opencv2/photo.hpp
