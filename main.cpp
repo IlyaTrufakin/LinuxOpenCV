@@ -48,12 +48,14 @@ int main()
     // Проверка успешности загрузки шрифта
     if (ft2.empty())
     {
-        std::cerr << "Ошибка: не удалось загрузить шрифт!" << std::endl << std::flush;
+        std::cerr << "Ошибка: не удалось загрузить шрифт!" << std::endl
+                  << std::flush;
         return -1;
     }
     else
     {
-        std::cerr << "Загрузка шрифта ОК!" << std::endl << std::flush;
+        std::cerr << "Загрузка шрифта ОК!" << std::endl
+                  << std::flush;
     }
 
     // камера 0 переменные
@@ -84,9 +86,8 @@ int main()
     // Добавление задержки, чтобы убедиться, что окна созданы с правильными параметрами
     cv::waitKey(500);
 
-    std::cout << "Разрешение экрана: " << screen_width << "x" << screen_height << std::endl << std::flush;
-
-
+    std::cout << "Разрешение экрана: " << screen_width << "x" << screen_height << std::endl
+              << std::flush;
 
     try
     {
@@ -148,7 +149,7 @@ int main()
 
             // Отображение кадров
             cv::imshow("Camera0", frame0);
-  //          cv::imshow("Camera1", frame1);
+            cv::imshow("Camera1", frame1);
 
             // Выход при нажатии любой клавиши
             if (cv::waitKey(30) >= 0)

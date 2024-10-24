@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
-project(YourProjectName)
+project(LinuxOpenCV)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-# Указываем путь к OpenCV
-set(OpenCV_DIR /usr/lib/aarch64-linux-gnu)  # Указываем найденный путь
 
 # Поиск пакетов
 find_package(PkgConfig REQUIRED)
@@ -12,46 +10,26 @@ pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 find_package(OpenCV REQUIRED)
 find_package(X11 REQUIRED)
 
-
-
-# Включение директорий заголовочных файлов
-include_directories(${GTK3_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${X11_INCLUDE_DIR})
-
-# Определение флагов компиляции для GTK3
-add_definitions(${GTK3_CFLAGS_OTHER})
+# Вывод отладочных сообщений
+message(STATUS "GTK3_INCLUDE_DIRS: ${GTK3_INCLUDE_DIRS}")
+message(STATUS "GTK3_LIBRARIES: ${GTK3_LIBRARIES}")
+message(STATUS "OpenCV_INCLUDE_DIRS: ${OpenCV_INCLUDE_DIRS}")
+message(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")
+message(STATUS "X11_INCLUDE_DIR: ${X11_INCLUDE_DIR}")
+message(STATUS "X11_LIBRARIES: ${X11_LIBRARIES}")
 
 # Добавление исполняемого файла
 add_executable(${PROJECT_NAME} main.cpp)
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "myfile")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "myfile3")
+
 # Указание директории для исполняемого файла
-set_target_properties(${PROJECT_NAME} PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
-)
+set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
-# Линковка библиотек с использованием простой формы
-target_link_libraries(${PROJECT_NAME} ${GTK3_LIBRARIES} ${OpenCV_LIBS} ${X11_LIBRARIES})
+# Включение директорий заголовочных файлов для цели
+target_include_directories(${PROJECT_NAME} PRIVATE ${GTK3_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${X11_INCLUDE_DIR})
 
+# Определение флагов компиляции для GTK3
+target_compile_options(${PROJECT_NAME} PRIVATE ${GTK3_CFLAGS_OTHER})
 
-
-
-
-# # Включаем директории с заголовочными файлами GTK3 и OpenCV
-# include_directories(${GTK3_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
-# link_directories(${GTK3_LIBRARY_DIRS} ${OpenCV_LIBRARY_DIRS})
-# # Включение директорий заголовочных файлов X11
-# target_include_directories(${PROJECT_NAME} PRIVATE ${OpenCV_INCLUDE_DIRS} ${X11_INCLUDE_DIR})
-# # Определяем флаги компиляции для GTK3
-# add_definitions(${GTK3_CFLAGS_OTHER})
-
-
-
-# # Линкуем библиотеки GTK3 и OpenCV
-# target_link_libraries(${PROJECT_NAME} ${GTK3_LIBRARIES} ${OpenCV_LIBS})
-# # Линковка библиотек X11
-# target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS} ${X11_LIBRARIES})
-
-
-
-
-
-
+# Линковка библиотек с использованием формы с ключевыми словами
+target_link_libraries(${PROJECT_NAME} PRIVATE ${GTK3_LIBRARIES} ${OpenCV_LIBS} ${X11_LIBRARIES})
